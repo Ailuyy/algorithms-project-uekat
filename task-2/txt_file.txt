@@ -1,0 +1,25 @@
+Number of points: 10
+Number of paths: 4
+
+Points:
+Point: x = 1.25 y = 13.75
+Point: x = 11.16 y = 36.82
+Point: x = 33.83 y = 44.61
+Point: x = 4.35 y = 21.1
+Point: x = 1.49 y = 10.93
+Point: x = 25.27 y = 1.33
+Point: x = 9.94 y = 32.49
+Point: x = 27.25 y = 11.02
+Point: x = 29.46 y = 40.47
+Point: x = 0.32 y = 40.29
+
+Paths:
+Path: x = 25.27 y = 1.33;x = 1.49 y = 10.93;x = 33.83 y = 44.61;x = 11.16 y = 36.82;x = 27.25 y = 11.02;x = 1.25 y = 13.75;x = 29.46 y = 40.47;x = 9.94 y = 32.49
+Path: x = 25.27 y = 1.33;x = 0.32 y = 40.29;x = 1.49 y = 10.93
+Path: x = 27.25 y = 11.02;x = 29.46 y = 40.47
+Path: x = 9.94 y = 32.49;x = 11.16 y = 36.82;x = 1.49 y = 10.93
+
+Start point: (0.32, 40.29)
+End point: (25.27, 1.33)
+Shortest Path: x = 0.32 y = 40.29;x = 11.16 y = 36.82;x = 9.94 y = 32.49;x = 4.35 y = 21.1;x = 1.25 y = 13.75;x = 25.27 y = 1.33
+Total Distance: 63.58625441387085
