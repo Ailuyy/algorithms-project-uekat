@@ -3,7 +3,7 @@ def random_data():
     n_points, num_paths, coords_limits = rnd.randint(2, 10), rnd.randint(1, 5), {"min":0.00, "max":50.00}
     points = [(round(rnd.uniform(coords_limits["min"], coords_limits["max"]), 2), round(rnd.uniform(coords_limits["min"], coords_limits["max"]), 2)) for _ in range(n_points)]
     paths = [rnd.sample(points, rnd.randint(2, n_points)) for _ in range(num_paths)]
-    print(paths)
+    return n_points, num_paths, points, paths
 def to_file(txt_file):
     data = random_data()
     with open(txt_file, "w") as f:
