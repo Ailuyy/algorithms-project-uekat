@@ -1,4 +1,5 @@
 import random as rnd, numpy as np, matplotlib.pyplot as plt
+import coords_to_txt
 rnd.seed(42)
 n_points, num_paths, coords_limits = rnd.randint(8, 10), rnd.randint(3, 10), {"min":0.00, "max":50.00}
 points = [(round(rnd.uniform(coords_limits["min"], coords_limits["max"]), 2), round(rnd.uniform(coords_limits["min"], coords_limits["max"]), 2)) for _ in range(n_points)]
