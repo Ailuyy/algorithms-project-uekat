@@ -6,7 +6,7 @@ def to_file(txt_file):
    with open(txt_file, "w") as f:
        f.write(f"Number of points: {n_points}\nNumber of paths: {num_paths}\n")
        f.writelines([f"{lat:.2f} % {lon:.2f}\n" for lat, lon in points])
-       f.writelines([f"Path: {';'.join([f'x = {lat:.2f} y = {lon:.2f}' for lat, lon in path_points])}\n" for path_points in paths])
+       f.writelines([f"Path: {';'.join([f'{lat:.2f} % {lon:.2f}' for lat, lon in path_points])}\n" for path_points in paths])
 def from_file(txt_file):
    points, paths = [], []
    with open(txt_file, "r") as f:
