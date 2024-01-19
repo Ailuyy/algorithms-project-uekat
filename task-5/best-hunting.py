@@ -113,9 +113,9 @@ def split_zones(hunt_items, cats):
             dante_zone = max((z for z in zone_counts if z not in assigned_zones),
                              key=lambda z: zone_counts[z]['rock'] + zone_counts[z]['leaf'])
             cat.zone = dante_zone
-    print(f'Ocena obszaru Luny: {zone_counts[luna_zone]["field_mouse"] + zone_counts[luna_zone]["house_mouse"]} / 230')
-    print(f'Ocena obszaru Ariany: {zone_counts[ariana_zone]["snail"]} / 90')
-    print(f'Ocena obszaru Dantego: {zone_counts[dante_zone]["rock"] + zone_counts[dante_zone]["leaf"]} / 500')
+    print(f'Rating for Luna: {zone_counts[luna_zone]["field_mouse"] + zone_counts[luna_zone]["house_mouse"]} / 230')
+    print(f'Rating for Ariana: {zone_counts[ariana_zone]["snail"]} / 90')
+    print(f'Rating for Dante: {zone_counts[dante_zone]["rock"] + zone_counts[dante_zone]["leaf"]} / 500')
 def visualize(cats):
     plt.figure(figsize=(10, 10))
     for cat in cats:
